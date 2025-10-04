@@ -32,4 +32,8 @@ describe('Calculator Unit Tests', () => {
             expect(calculator.divide(10, 0)).toBe(null);
         });
     });
+
+    afterAll((done) => {
+        server.close(done); // stop server after all tests
+    });
 });

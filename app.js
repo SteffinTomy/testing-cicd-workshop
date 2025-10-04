@@ -48,11 +48,8 @@ app.post('/calculate', (req, res) => {
     res.json({ result });
 });
 
-let server;
-if (require.main === module) {
-    server = app.listen(port, () => {
-        console.log(`Calculator API listening at http://localhost:${port}`);
-    });
-}
+const server = app.listen(port, () => {
+    console.log(`Calculator API listening at http://localhost:${port}`);
+});
 
 module.exports = { app, server, calculator };
