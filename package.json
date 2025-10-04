@@ -34,7 +34,7 @@
         }
       ]
     ],
-    "converageReporters": [
+    "coverageReporters": [
       "text",
       "lcov",
       "html"
