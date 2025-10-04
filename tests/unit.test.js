@@ -1,6 +1,7 @@
 const { calculator, server } = require('../app');
 
 describe('Calculator Unit Tests', () => {
+
     describe('Addition', () => {
         test('should add two positive numbers', () => {
             expect(calculator.add(2, 3)).toBe(5);
