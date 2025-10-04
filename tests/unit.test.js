@@ -1,4 +1,4 @@
-const { calculator, server, port } = require('../app');
+const { calculator, server, port, app`` } = require('../app');
 
 describe('Calculator Unit Tests', () => {
     beforeAll((done) => {
