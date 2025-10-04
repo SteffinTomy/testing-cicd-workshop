@@ -1,9 +1,8 @@
-const { calculator } = require('../app');
+const { calculator, server, port } = require('../app');
 
 describe('Calculator Unit Tests', () => {
-    let server;
     beforeAll((done) => {
-        server = app.listen(3001, done); // start server before tests
+        server = app.listen(port, done); // start server before tests
     });
 
     describe('Addition', () => {

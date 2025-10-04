@@ -52,4 +52,4 @@ const server = app.listen(port, () => {
     console.log(`Calculator API listening at http://localhost:${port}`);
 });
 
-module.exports = { app, server, calculator };
+module.exports = { app, server, calculator, port };
