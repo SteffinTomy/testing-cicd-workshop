@@ -32,7 +32,7 @@ jobs:
       run: npm run test:integration
 
     - name: Generate test coverage
-      run: npm run converage
+      run: npm run coverage
 
     - name: Upload converage to Codecov
       uses: codecov/codecov-action@v3
