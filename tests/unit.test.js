@@ -34,6 +34,12 @@ describe('Calculator Unit Tests', () => {
         });
     });
 
+    describe("Invaid input", () => {
+        test("Wrong body", () => {
+            
+        });
+    });
+
     afterAll((done) => {
         server.close(done); // stop server after all tests
     });
