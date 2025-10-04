@@ -36,6 +36,12 @@ jobs:
     - name: Generate test coverage
       run: npm run test:coverage
     
+    - name: Run ESlint
+      run: npm run lint
+
+    - name: Run audit-ci
+      run: npx audit-ci --moderate
+    
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v5
       with:
